@@ -81,7 +81,7 @@ public class MainActivity2 extends AppCompatActivity{
 
     public void load_settings(){
         SharedPreferences sharedNetworkSettings = getSharedPreferences(SHARED_PREF, MODE_PRIVATE);
-        serverIP = sharedNetworkSettings.getString(SHARED_PREF_IP,"89.203.156.223");
+        serverIP = sharedNetworkSettings.getString(SHARED_PREF_IP,"xxx.xxx.xxx.xxx");
         serverPort = sharedNetworkSettings.getInt(SHARED_PREF_PORT,9089);
     }
 
