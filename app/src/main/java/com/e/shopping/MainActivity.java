@@ -128,9 +128,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void run() {
             SocketCom nc = new SocketCom(serverIP,serverPort, null);
-            //89.203.156.223 or 192.168.56.1
-            //9089 or 65432
-
             nc.sendDataWithString(command);
             message = nc.receiveDataFromServer();
             if(!nc.getError()) {
